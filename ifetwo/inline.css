@@ -1,0 +1,95 @@
+body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    transition: ease 5s;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+/*header section*/
+header{
+    animation: animate 5s infinite;
+    text-align: center;
+    color: white;
+    word-spacing: 85px;
+    text-transform: capitalize;
+    padding: 1px 0;
+}
+@keyframes animate {
+    0% {background-color: blue;}
+    20% {background-color: blue;}
+    21% {background-color: yellow;}
+    40% {background-color: yellow;}
+    41% {background-color: green;}
+    60% {background-color: green;}
+    61% {background-color: purple;}
+    80% {background-color: purple;}
+    81% {background-color: red;}
+    100% {background-color: red;}
+}
+header img{
+    width: 10%;
+}
+header p{
+    font-size: 25px;
+    text-shadow: -2px -2px 2px black;
+}
+header p b{
+    word-spacing: normal;
+    cursor: pointer;
+}
+/*header section ends*/
+
+/*inlineContainer section*/
+.inlineContainer{
+    padding: 10px 0;
+    width: 100%;
+    display: inline-flex;
+    margin: 0 8%;
+}
+.inlineContainer .left, .inlineContainer .right{
+    width: 40%;
+    padding: 10px;
+    margin: 0 5px;
+    text-align: left;
+}
+.inlineContainer .left img, .inlineContainer .right img{
+    width: 100%;
+}
+h1{
+    text-transform: capitalize;
+    color: blue;
+}
+h1 b{
+    color: red;
+}
+/*inlineContainer section ends*/
+
+/*about section*/
+.about{
+    background-color: rgb(246, 242, 242);
+    padding: 10px;
+    width: 90%;
+    position: relative;
+    margin: auto;
+    height: max-content;
+}
+.about h2{
+    color: blue;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 35px 0;
+}
+.about .left{
+    float: left;
+    width: 40%;
+    clear: both;
+}
+.about .left img{
+    width: 100%;
+}
+.about .right{
+    width: 40%;
+    margin-left: 50%;
+}

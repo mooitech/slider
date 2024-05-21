@@ -1,0 +1,162 @@
+body{
+    margin:0;
+}
+header{
+    background-color: rgb(3, 3, 96);
+    padding: 1px 0;
+    display: inline-flex;
+    justify-content: space-evenly;
+    width: 100%;
+    color: white;
+}
+header div {
+    background-color: blue;
+    padding: 10px 0;
+    margin: 0 5px;
+}
+header img{
+    width: 15%;
+}
+.side1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    width: 20%;
+    background-color: unset;
+}
+.side2{
+    word-spacing: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 40%;
+    background-color: unset;
+}
+header span{
+    word-spacing: normal;
+    position: relative;
+    top: 25px;
+}
+.side3{
+    word-spacing: 20px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: unset;
+    color: rgb(3, 3, 96);
+    text-transform: capitalize;
+    width: 30%;
+}
+.side3 span{
+    background-color: white;
+    padding: 6px 10px;
+}
+.side3 span b{
+    background-color: orange;
+    padding: 2px 5px;
+    color: white;
+}
+.sliderCon{
+    height:max-content;
+    overflow: hidden;
+}
+.slider{
+    height:max-content;
+    width: 400%;
+    display:inline-flex;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: 1s ease;
+}
+.slide{
+    width:25%;
+    height: 600px;
+    position: relative;
+    animation: slider 8s infinite;
+    transition: 1s ease;
+}
+@keyframes slider {
+    0%{
+        right: 0;
+    }
+    25%{
+        right: 0%;
+    }
+    26%{
+        right: 25%;
+    }
+    50%{
+        right: 25%;
+    }
+    51%{
+        right: 50%;
+    }
+    75%{
+        right: 50%;
+    }
+    76%{
+        right: 75%;
+    }
+    100%{
+        right: 75%;
+    }
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+.fourColSection{
+    position: relative;
+    bottom: 80px;
+}
+.fourCol{
+    padding: 10px 0;
+    width: 70%;
+    margin: 0 15%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.fourCol div{
+    background-color: white;
+    padding: 10px 0;
+    width: 23%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(196, 194, 194);
+}
+.fourCol img{
+    width: 50%;
+    height: 80px;
+}
+
+.project .h3{
+    width: 67%;
+    position: relative;
+    margin: auto;
+    font-weight: lighter;
+    color: rgb(1, 1, 61);
+}
+.fps{
+    padding: 10px 0;
+    width: 70%;
+    margin: 0 15%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    line-height: 10px;
+}
+.fps .col1, .col2{
+   padding: 10px 0;
+   width: 47%;
+}
+.fps img{
+   width: 100%;
+   height: 300px;
+}
+.fps span{
+   color: rgb(113, 111, 111);
+}
+.fps .write{
+    width: 90%;
+    position: relative;
+    margin: auto;
+}

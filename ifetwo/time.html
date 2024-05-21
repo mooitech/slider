@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .time{
+        position: relative;
+        margin-top: 15%;
+        background-color: blue;
+        color: white;
+        width: 500px;
+        padding: 20px;
+        position: relative;
+        margin: auto;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 0px 15px 10px black;
+    }
+    h1{
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 200px;
+        color: white;
+        transition: ease-in-out;
+        animation: trans 1s infinite;
+    }
+    sup{
+        font-size: 30px;
+        position: absolute;
+        background-color: white;
+        color: red;
+        border-radius: 50%;
+        padding: 10px;
+    }
+    @keyframes trans {
+        0%{transform: scale(1.5);}
+        50%{transform: scale(1.1);}
+        0%{transform: scale(1);}
+    }
+</style>
+<body>
+    <div class="time">
+        <h1><b id="time"> </b> <sup id="sec"> </sup></h1>
+    </div>
+    <script>
+        var m = 30;
+        var s = 0;
+        var de = 59;
+        var st = 30;
+        
+
+        function classTime() {
+            if (s != de && m != 0) {
+                s++;
+                document.getElementById("time").innerHTML = m;
+                document.getElementById("sec").innerHTML = s;
+            }
+            else if (s == de && m != 0) {
+                s = 0;
+                m--;
+                document.getElementById("time").innerHTML = m;
+                document.getElementById("sec").innerHTML = s;
+            }
+            else{
+                document.getElementById("time").innerHTML = 0 + "0";
+                document.getElementById("sec").innerHTML = 0 + "0";
+            }
+        }
+        setInterval(classTime, 1000);
+        
+    </script>
+</body>
+</html>

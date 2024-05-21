@@ -1,0 +1,80 @@
+h1{
+    text-align: center;
+    color: red;
+    text-decoration: underline solid blue;
+}
+.name{
+    color: blue;
+}
+h2, h3, h4{
+    color: blue;
+}
+table{
+    width: 100%;
+    height: 350px;
+}
+td{
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: red;
+}
+tr{
+    background-color: blue;
+    color: white;
+}
+.button{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 30px;
+    background-color: blue;
+    color: white;
+    border: 0;
+    border-radius: 5px 20px;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+form{
+    box-shadow: 0px 0px 5px rgb(178, 178, 178);
+    width: 50%;
+    padding: 70px 50px;
+    position: relative;
+    margin: auto;
+}
+.input{
+    width: 230px;
+    height: 35px;
+    border: 0;
+    outline: 0;
+    box-shadow: 0px 0px 5px rgb(178, 178, 178);
+}
+textarea{
+    width: 80%;
+    height: 260px;
+    border: 0;
+    outline: 0;
+    box-shadow: 2px 2px 5px rgb(178, 178, 178);
+    border-radius: 5px;
+    resize: none;
+}
+.btn{
+    text-align: right;
+    width: 80%;
+}
+.same{
+    line-height: 1px;
+    margin: 40px 0;
+}
+
+p{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blue;
+}
+.btn .button:hover{
+    background-color: rgb(116, 116, 251);
+}
+

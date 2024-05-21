@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="">
+        <input type="text" value="" placeholder=" First name" class="input" required>
+        <input type="text" value="" placeholder=" Last name" class="input">
+        <input type="text" value="" placeholder=" Age" class="input">
+
+        <div class="same">
+            <p>Gender</p>
+        <span>Male</span><input type="radio" value="male" name="gender"> <span>Female</span><input type="radio" value="female" name="gender">
+        </div>
+
+        <div class="same">
+            <p>Occupation</p>
+        <span>self employed</span><input type="checkbox" value="self employed"> <span>employed</span><input type="checkbox" value="employed">
+        </div>
+
+        <div class="same">
+            <p><label for="state">State</label></p>
+            <select name="" id="state">
+                <option value="Edo">Edo</option>
+                <option value="Oyo" selected>Oyo</option>
+                <option value="Lagos">Lagos</option>
+            </select>
+        </div>
+
+        <div class="same">
+            <p><label for="city">City</label></p>
+            <input type="text" list="city">
+            <datalist id="city">
+                <option value="Auchi"></option>
+                <option value="Ibadan"></option>
+                <option value="Ikeja"></option>
+            </datalist>
+        </div>
+
+        
+
+        <div class="same">
+            <p>Comment  </p>
+        <textarea name="comment" id="" cols="30" rows="10" placeholder=" comment"></textarea>
+        </div>
+        
+
+
+        <fieldset>
+            <legend><p>Eductaion</p></legend>
+            <div class="same">
+                <p><label for="state">State</label></p>
+                <select name="" id="state">
+                    <option value="Edo">Edo</option>
+                    <option value="Oyo" selected>Oyo</option>
+                    <option value="Lagos">Lagos</option>
+                </select>
+            </div>
+    
+            <div class="same">
+                <p><label for="city">City</label></p>
+                <input type="text" list="city">
+                <datalist id="city">
+                    <option value="Auchi"></option>
+                    <option value="Ibadan"></option>
+                    <option value="Ikeja"></option>
+                </datalist>
+            </div>
+        </fieldset>
+        <br><br>
+
+        <div class="btn">
+            <input type="submit" value="send" class="button">
+        </div>
+    </form>
+</body>
+</html>
